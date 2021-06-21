@@ -115,6 +115,10 @@ h3 {
     color: white;
 }
 
+.reset-btn, .del-btn, .equal-btn {
+    color: white;
+}
+
 /* -----THEME STYLES------ */
 
 .theme-two-body {
@@ -148,4 +152,37 @@ h3 {
 .theme-two-font {
     color: hsl(60, 10%, 19%);
 }
+/* 
+    ---THEME THREE--- */
 
+.theme-three-body {
+    background-color: hsl(268, 75%, 9%);
+}
+
+.theme-three-calculator-input {
+    background-color: hsl(268, 71%, 12%)
+}
+
+.theme-three-calculator-panel {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.theme-three-buttons {
+    background-color: hsl(281, 89%, 26%);
+    border-bottom: 5px solid hsl(285, 91%, 52%);
+}
+
+.theme-three-equal-button {
+    background-color: hsl(176, 100%, 44%);
+    border-color: hsl(177, 92%, 70%);
+}
+
+
+.theme-three-del-btn, .theme-three-reset-btn {
+    background-color: hsl(268, 47%, 21%);
+    border-color: hsl(290, 70%, 36%);
+}
+
+.theme-three-font {
+    color: hsl(52, 100%, 62%);
+}

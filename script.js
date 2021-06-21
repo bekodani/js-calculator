@@ -125,7 +125,10 @@ class Calculator {
     calculator.updateDisplay()
   })
 
-document.getElementById('one').onclick = () => {
+
+/*   --------THEME SWITCHER------- */
+
+function themeTwoAdd() {
   var body = document.body;
   var input = document.querySelector('.calculator-input')
   var panel = document.querySelector('.calculator-panel')
@@ -135,6 +138,9 @@ document.getElementById('one').onclick = () => {
   document.querySelectorAll('.btn').forEach(button=> {
     button.classList.add('theme-two-buttons', 'theme-two-font')
   });
+  document.querySelectorAll('.h2-element, .h3-element, .previous-operand, .current-operand').forEach(header => {
+    header.classList.add('theme-two-font')
+  })
   body.classList.add('theme-two-body')
   input.classList.add('theme-two-calculator-input')
   panel.classList.add('theme-two-calculator-panel')
@@ -142,4 +148,83 @@ document.getElementById('one').onclick = () => {
   resButton.classList.add('theme-two-reset-btn')
   equalButton.classList.add('theme-two-equal-button')
 }
+
+function themeTwoRemove() {
+  var body = document.body;
+  var input = document.querySelector('.calculator-input')
+  var panel = document.querySelector('.calculator-panel')
+  var equalButton = document.querySelector('.equal-btn')
+  var delButton = document.querySelector('.del-btn')
+  var resButton = document.querySelector('.reset-btn')
+  document.querySelectorAll('.btn').forEach(button=> {
+    button.classList.remove('theme-two-buttons', 'theme-two-font')
+  });
+  document.querySelectorAll('.h2-element, .h3-element, .previous-operand, .current-operand').forEach(header => {
+    header.classList.remove('theme-two-font')
+  })
+  body.classList.remove('theme-two-body')
+  input.classList.remove('theme-two-calculator-input')
+  panel.classList.remove('theme-two-calculator-panel')
+  delButton.classList.remove('theme-two-del-btn')
+  resButton.classList.remove('theme-two-reset-btn')
+  equalButton.classList.remove('theme-two-equal-button')
+}
+
+function themeThreeAdd() {
+  var body = document.body;
+  var input = document.querySelector('.calculator-input')
+  var panel = document.querySelector('.calculator-panel')
+  var equalButton = document.querySelector('.equal-btn')
+  var delButton = document.querySelector('.del-btn')
+  var resButton = document.querySelector('.reset-btn')
+  document.querySelectorAll('.btn').forEach(button=> {
+    button.classList.add('theme-three-buttons', 'theme-three-font')
+  });
+  document.querySelectorAll('.h2-element, .h3-element, .previous-operand, .current-operand').forEach(header => {
+    header.classList.add('theme-three-font')
+  })
+  body.classList.add('theme-three-body')
+  input.classList.add('theme-three-calculator-input')
+  panel.classList.add('theme-three-calculator-panel')
+  delButton.classList.add('theme-three-del-btn')
+  resButton.classList.add('theme-three-reset-btn')
+  equalButton.classList.add('theme-three-equal-button')
+}
+
+function themeThreeRemove() {
+  var body = document.body;
+  var input = document.querySelector('.calculator-input')
+  var panel = document.querySelector('.calculator-panel')
+  var equalButton = document.querySelector('.equal-btn')
+  var delButton = document.querySelector('.del-btn')
+  var resButton = document.querySelector('.reset-btn')
+  document.querySelectorAll('.btn').forEach(button=> {
+    button.classList.remove('theme-three-buttons', 'theme-three-font')
+  });
+  document.querySelectorAll('.h2-element, .h3-element, .previous-operand, .current-operand').forEach(header => {
+    header.classList.remove('theme-three-font')
+  })
+  body.classList.remove('theme-three-body')
+  input.classList.remove('theme-three-calculator-input')
+  panel.classList.remove('theme-three-calculator-panel')
+  delButton.classList.remove('theme-three-del-btn')
+  resButton.classList.remove('theme-three-reset-btn')
+  equalButton.classList.remove('theme-three-equal-button')
+}
+
+document.querySelector('#one').onclick = () => {
+  themeTwoRemove()
+  themeThreeRemove()
+}
+
+document.querySelector('#two').onclick = () => {
+  themeTwoAdd()
+  themeThreeRemove()
+  } 
+
+  document.querySelector('#three').onclick = () => {
+    themeTwoRemove()
+    themeThreeAdd()
+  }
+
 

@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(222, 26%, 31%);
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+}
+
+.calculator-wrapper {
+    margin: 0 auto;
+    width: 340px;
+}
+
+.calculator-container {
+    margin-top: 30px;
+}
+
+.calculator-panel {
+    background-color: hsl(224, 36%, 15%);
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: right;
+    margin-top: 30px;
+}
+
+
+.calculator-input {
+    background-color: hsl(223, 31%, 20%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 25px;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+button {
+    background-color: hsl(30, 25%, 89%);
+    height: 62px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: hsl(221, 14%, 31%);
+    border: none;
+    border-radius: 5px;
+    border-bottom: 5px solid hsl(28, 16%, 65%);
+    cursor: pointer; 
+}
+
+
+
+.equal-btn {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: hsl(6, 63%, 50%);
+    border-color: hsl(6, 70%, 34%);
+}
+
+.reset-btn {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.del-btn, .reset-btn {
+    background-color: hsl(225, 21%, 49%);
+    border-color: hsl(224, 28%, 35%);
+}
+
+
+.current-operand {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.previous-operand {
+    color: rgb(243, 242, 242);
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: white;
+    display: inline-block;
+}
+
+h3 {
+    font-size: 0.8rem;
+    color: white;
+}
+
+.switch-box {
+    display: inline;
+    float: right;   
+}
+
+.switch-box > * {
+    display: inline-block;
+}
+
+.label-wrapper {
+    display: block
+}
+
+.input-wrapper {
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.radio-dot {
+    border-radius: 50%;
+    background-color: hsl(6, 63%, 50%);
+    border: none;
+    color: white;
+}
+
+/* -----THEME STYLES------ */
+
+.theme-two-body {
+    background-color: hsl(0, 0%, 90%);
+}
+
+.theme-two-calculator-input {
+    background-color: hsl(0, 5%, 81%);
+}
+
+.theme-two-calculator-panel {
+    background-color: hsl(0, 0%, 93%);
+}
+
+.theme-two-buttons {
+    background-color: hsl(45, 7%, 89%);
+    border-bottom: 5px solid hsl(35, 11%, 61%)
+}
+
+.theme-two-equal-button {
+    background-color: hsl(25, 98%, 40%);
+    border-color: hsl(25, 99%, 27%);
+}
+
+
+.theme-two-del-btn, .theme-two-reset-btn {
+    background-color: hsl(185, 42%, 37%);
+    border-color: hsl(185, 58%, 25%);
+}
+
+.theme-two-font {
+    color: hsl(60, 10%, 19%);
+}
+

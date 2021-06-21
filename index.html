@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <script src="./script.js" defer></script>
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="calculator-wrapper">
+  <div class="calculator-container">
+    <h2>calc</h2>
+    <div class="switch-box">
+      <h3>THEME</h3>
+      <div class="switch-box-wrapper">
+        <div class="input-wrapper">
+          <input type="button" class="radio-dot" value="1" id="one">
+          <input type="button" class="radio-dot" value="2" id="two">
+          <input type="button" class="radio-dot" value="3" id="three">
+        </div>
+      </div>
+    </div>
+    <div class="calculator-panel">
+      <div data-previous-operand class="previous-operand"></div>
+      <div data-current-operand class="current-operand"></div>
+    </div>
+    <div class="calculator-input">
+      <button class="btn" data-number>7</button>
+      <button class="btn" data-number>8</button>
+      <button class="btn" data-number>9</button>
+      <button data-delete class="del-btn">DEL</button>
+      <button class="btn" data-number>4</button>
+      <button class="btn" data-number>5</button>
+      <button class="btn" data-number>6</button>
+      <button class="btn" data-operation>+</button>
+      <button class="btn" data-number>1</button>
+      <button class="btn" data-number>2</button>
+      <button class="btn" data-number>3</button>
+      <button class="btn" data-operation>-</button>
+      <button class="btn" data-number>.</button>
+      <button class="btn" data-number>0</button>
+      <button class="btn" data-operation>/</button>
+      <button class="btn" data-operation>*</button>
+      <button data-all-clear class="reset-btn">RESET</button>
+      <button data-equals class="equal-btn">=</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
